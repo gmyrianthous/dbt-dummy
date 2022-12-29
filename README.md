@@ -1,5 +1,5 @@
 # dbt-dummy
-This is a dummy dbt (data build tool) project you can use for testing purposes or experimentation
+This is a dummy dbt (data build tool) project you can use to populate dbt seeds, models, snapshots and tests for testing purposes or experimentation.
 
 The `docker-compose.yml` file consists of two services:
 - `postgres`
@@ -105,7 +105,7 @@ dbt build --profiles-dir profiles
 In order to query and verify the seeds, models and snapshots created in the dummy dbt project, simply follow the 
 steps below. 
 
-Find the container id of the postgres service (`dbt-dummy_postgres`):
+Find the container id of the postgres service (`postgres`):
 ```commandline
 docker ps 
 ```
