@@ -1,4 +1,4 @@
-original_dbt:
+customer:
   target: dev
   outputs:
     dev:
@@ -11,7 +11,7 @@ original_dbt:
       schema: public
       threads: 1
 
-dependent_dbt:
+shared_dbt:
   target: dev
   outputs:
     dev:
