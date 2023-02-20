@@ -1932,3 +1932,21 @@ select * from (
 [0m15:28:18.392454 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=0 SKIP=0 TOTAL=14
 [0m15:28:18.394445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff98f4c040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff98f4cd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9be29c60>]}
 [0m15:28:18.396809 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-20 17:12:32.067212 | 67e56086-9d7c-402f-a7b3-f00f2e547afd ==============================
+[0m17:12:32.067229 [info ] [MainThread]: Running with dbt=1.3.1
+[0m17:12:32.068629 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': '/usr/src/dbt/dbt_project/original_dbt', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m17:12:32.070621 [debug] [MainThread]: Tracking: tracking
+[0m17:12:32.075159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2535c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2535d20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2535cc0>]}
+[0m17:12:32.081901 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-gq__6ymw'
+[0m17:12:32.083567 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:12:32.824734 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:12:32.832293 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:12:33.496899 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:12:33.560589 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:12:39.175045 [info ] [MainThread]:   Installed from version 1.0.0
+[0m17:12:39.176926 [info ] [MainThread]:   Up to date!
+[0m17:12:39.179655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '67e56086-9d7c-402f-a7b3-f00f2e547afd', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa25ad3c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa25ad2d0>]}
+[0m17:12:39.181742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa26f5600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa25ad450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa25ad330>]}
+[0m17:12:39.183447 [debug] [MainThread]: Flushing usage events
