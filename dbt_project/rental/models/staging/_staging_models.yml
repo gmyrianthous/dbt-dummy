@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_rental
+    description: "Staging model consisting of rental events"
+    columns:
+      - name: rental_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null

@@ -4,3 +4,7 @@ sources:
   - name: public
     tables:
       - name: payment
+      - name: customer
+      - name: rental
+      - name: film
+      - name: category

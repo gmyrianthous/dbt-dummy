@@ -11,3 +11,31 @@ models:
       - name: customer_id
         tests:
           - not_null
+  - name: stg_customer
+    description: "Staging model consisting of customer details"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_rental
+    description: "Staging model consisting of customer details"
+    columns:
+      - name: rental_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_film
+    description: "Staging model consisting of film information"
+    columns:
+      - name: film_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_category
+    description: "Staging model including all film categories"
+    columns:
+      - name: category_id
+        tests:
+          - unique
+          - not_null

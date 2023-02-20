@@ -3549,3 +3549,966 @@ having count(*) > 1
 [0m17:17:17.387657 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
 [0m17:17:17.389811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9b0099c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9b008f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9b008d30>]}
 [0m17:17:17.394039 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-20 20:44:27.980007 | 15eccdcb-fb15-4bd9-bfb4-83b9d53caec5 ==============================
+[0m20:44:27.980018 [info ] [MainThread]: Running with dbt=1.3.1
+[0m20:44:27.981354 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/src/dbt/dbt_project/profiles', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': '/usr/src/dbt/dbt_project/shared_dbt', 'select': ['./shared_dbt'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m20:44:27.983073 [debug] [MainThread]: Tracking: tracking
+[0m20:44:28.009284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb3f8bbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb3f8a9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb3f8aa10>]}
+[0m20:44:28.012622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb3f8bf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb3f8a740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb3f8a9e0>]}
+[0m20:44:28.015207 [debug] [MainThread]: Flushing usage events
+[0m20:44:28.951446 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+
+
+============================== 2023-02-20 20:45:01.490998 | f6bb495a-7f26-4e25-9422-b6c069420130 ==============================
+[0m20:45:01.491011 [info ] [MainThread]: Running with dbt=1.3.1
+[0m20:45:01.493127 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/src/dbt/dbt_project/profiles', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': '/usr/src/dbt/dbt_project/shared_dbt', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m20:45:01.494952 [debug] [MainThread]: Tracking: tracking
+[0m20:45:01.498126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f2b0340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f2b2260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f2b2200>]}
+[0m20:45:01.508779 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-flgrke5_'
+[0m20:45:01.510558 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m20:45:02.326228 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m20:45:02.328980 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m20:45:02.918528 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m20:45:02.979159 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m20:45:07.862188 [info ] [MainThread]:   Installed from version 1.0.0
+[0m20:45:07.864760 [info ] [MainThread]:   Up to date!
+[0m20:45:07.866582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'f6bb495a-7f26-4e25-9422-b6c069420130', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f2b2500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f2b20e0>]}
+[0m20:45:07.868839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f11a950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f2b2590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f2b2860>]}
+[0m20:45:07.892793 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-20 20:45:12.083358 | 151ced27-cbf1-4c60-99b9-60f24bdf5e1f ==============================
+[0m20:45:12.083368 [info ] [MainThread]: Running with dbt=1.3.1
+[0m20:45:12.088719 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/src/dbt/dbt_project/profiles', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': '/usr/src/dbt/dbt_project/shared_dbt', 'select': ['./shared_dbt'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m20:45:12.091110 [debug] [MainThread]: Tracking: tracking
+[0m20:45:12.094688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffbbb246d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb8d42a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb8d42a70>]}
+[0m20:45:12.119523 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m20:45:12.122051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '151ced27-cbf1-4c60-99b9-60f24bdf5e1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb8d5c340>]}
+[0m20:45:12.495848 [debug] [MainThread]: Parsing macros/timestamps.sql
+[0m20:45:12.520568 [debug] [MainThread]: Parsing macros/relations.sql
+[0m20:45:12.523500 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m20:45:12.536579 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m20:45:12.539515 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m20:45:12.542009 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m20:45:12.544683 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m20:45:12.549307 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m20:45:12.552373 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m20:45:12.559983 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m20:45:12.562247 [debug] [MainThread]: Parsing macros/materializations/incremental_strategies.sql
+[0m20:45:12.564147 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+[0m20:45:12.566004 [debug] [MainThread]: Parsing macros/python_model/python.sql
+[0m20:45:12.570176 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m20:45:12.576935 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m20:45:12.579319 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m20:45:12.582098 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m20:45:12.583769 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m20:45:12.585194 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m20:45:12.586884 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m20:45:12.593351 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m20:45:12.595662 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m20:45:12.598212 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m20:45:12.600836 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m20:45:12.605598 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m20:45:12.607724 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m20:45:12.609549 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m20:45:12.611383 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m20:45:12.613170 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m20:45:12.615058 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m20:45:12.616791 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m20:45:12.620789 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m20:45:12.622890 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m20:45:12.625642 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m20:45:12.627661 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m20:45:12.629833 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m20:45:12.652962 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m20:45:12.655616 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m20:45:12.662209 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m20:45:12.665168 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m20:45:12.670009 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+[0m20:45:12.672709 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m20:45:12.675386 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m20:45:12.683185 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m20:45:12.690753 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m20:45:12.699743 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m20:45:12.703197 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m20:45:12.705795 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m20:45:12.708783 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m20:45:12.715572 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m20:45:12.719661 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m20:45:12.724780 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m20:45:12.727862 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m20:45:12.731063 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m20:45:12.742478 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m20:45:12.744992 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m20:45:12.754127 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m20:45:12.762063 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m20:45:12.766033 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m20:45:12.768930 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m20:45:12.771270 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m20:45:12.777428 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m20:45:12.787169 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m20:45:12.792365 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m20:45:12.801625 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+[0m20:45:12.808436 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m20:45:12.811501 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m20:45:12.816078 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m20:45:12.818654 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m20:45:12.820527 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m20:45:12.843844 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m20:45:12.848316 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m20:45:12.851206 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m20:45:12.856313 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m20:45:12.866508 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m20:45:12.868954 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m20:45:12.870500 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m20:45:12.872088 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m20:45:12.878937 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m20:45:12.881646 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+[0m20:45:12.884212 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+[0m20:45:12.886645 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+[0m20:45:12.888931 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+[0m20:45:12.897015 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+[0m20:45:12.900252 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+[0m20:45:12.902622 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+[0m20:45:12.906545 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+[0m20:45:12.912341 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+[0m20:45:12.915335 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+[0m20:45:12.917927 [debug] [MainThread]: Parsing macros/generic_tests/not_empty_string.sql
+[0m20:45:12.920382 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+[0m20:45:12.923465 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+[0m20:45:12.927596 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+[0m20:45:12.930142 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+[0m20:45:12.933167 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+[0m20:45:12.936043 [debug] [MainThread]: Parsing macros/jinja_helpers/_is_ephemeral.sql
+[0m20:45:12.938272 [debug] [MainThread]: Parsing macros/jinja_helpers/_is_relation.sql
+[0m20:45:12.940163 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+[0m20:45:12.943500 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+[0m20:45:12.945215 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+[0m20:45:12.947224 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+[0m20:45:12.949087 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+[0m20:45:12.952937 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+[0m20:45:12.955841 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+[0m20:45:12.979448 [debug] [MainThread]: Parsing macros/sql/generate_surrogate_key.sql
+[0m20:45:12.982605 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+[0m20:45:12.986793 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+[0m20:45:12.989876 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+[0m20:45:12.992207 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+[0m20:45:12.995686 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+[0m20:45:12.998929 [debug] [MainThread]: Parsing macros/sql/get_single_value.sql
+[0m20:45:13.001852 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+[0m20:45:13.008543 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+[0m20:45:13.013768 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+[0m20:45:13.016167 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+[0m20:45:13.018355 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+[0m20:45:13.022200 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+[0m20:45:13.028713 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+[0m20:45:13.031073 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+[0m20:45:13.034414 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+[0m20:45:13.036703 [debug] [MainThread]: Parsing macros/sql/safe_divide.sql
+[0m20:45:13.038605 [debug] [MainThread]: Parsing macros/sql/star.sql
+[0m20:45:13.046753 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+[0m20:45:13.048879 [debug] [MainThread]: Parsing macros/sql/union.sql
+[0m20:45:13.055890 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+[0m20:45:13.060059 [debug] [MainThread]: Parsing macros/sql/width_bucket.sql
+[0m20:45:13.064216 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+[0m20:45:13.066702 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+[0m20:45:13.068974 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+[0m20:45:13.213896 [debug] [MainThread]: 1699: static parser successfully parsed intermediate/int_revenue_by_date.sql
+[0m20:45:13.221685 [debug] [MainThread]: 1699: static parser successfully parsed staging/stg_payment.sql
+[0m20:45:13.316671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '151ced27-cbf1-4c60-99b9-60f24bdf5e1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb851d930>]}
+[0m20:45:13.363012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '151ced27-cbf1-4c60-99b9-60f24bdf5e1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb8d5d660>]}
+[0m20:45:13.365488 [info ] [MainThread]: Found 2 models, 3 tests, 0 snapshots, 0 analyses, 401 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m20:45:13.367637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '151ced27-cbf1-4c60-99b9-60f24bdf5e1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffbb4ad180>]}
+[0m20:45:13.372662 [warn ] [MainThread]: The selection criterion './shared_dbt' does not match any nodes
+[0m20:45:13.375021 [info ] [MainThread]: 
+[0m20:45:13.377255 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m20:45:13.442913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffbb40f190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffbb45cbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffbb1bfaf0>]}
+[0m20:45:13.444675 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-20 20:46:02.654198 | 601c9d5e-dd81-4836-91d7-1e91dcbd9b5b ==============================
+[0m20:46:02.654207 [info ] [MainThread]: Running with dbt=1.3.1
+[0m20:46:02.656332 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/src/dbt/dbt_project/profiles', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': '/usr/src/dbt/dbt_project/shared_dbt', 'select': ['./shared_dbt'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m20:46:02.658091 [debug] [MainThread]: Tracking: tracking
+[0m20:46:02.661467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7ce5ff40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7ce5e950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7ce5e9b0>]}
+[0m20:46:02.869315 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:46:02.871401 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:46:02.876811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '601c9d5e-dd81-4836-91d7-1e91dcbd9b5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cc540d0>]}
+[0m20:46:02.932612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '601c9d5e-dd81-4836-91d7-1e91dcbd9b5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cd0e650>]}
+[0m20:46:02.934368 [info ] [MainThread]: Found 2 models, 3 tests, 0 snapshots, 0 analyses, 401 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m20:46:02.936060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '601c9d5e-dd81-4836-91d7-1e91dcbd9b5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f57be20>]}
+[0m20:46:02.943332 [warn ] [MainThread]: The selection criterion './shared_dbt' does not match any nodes
+[0m20:46:02.945574 [info ] [MainThread]: 
+[0m20:46:02.947261 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m20:46:02.992719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cd0c760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cd0c4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cd0de10>]}
+[0m20:46:02.999771 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-20 20:46:11.902881 | 3bf0d268-7793-4fc9-8965-41a6458b3d12 ==============================
+[0m20:46:11.902892 [info ] [MainThread]: Running with dbt=1.3.1
+[0m20:46:11.909285 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/src/dbt/dbt_project/profiles', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': '/usr/src/dbt/dbt_project/shared_dbt', 'select': ['./shared_dbt'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m20:46:11.911479 [debug] [MainThread]: Tracking: tracking
+[0m20:46:11.914679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb5c93f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb5c92950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb5c929b0>]}
+[0m20:46:12.085825 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:46:12.088566 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:46:12.094700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3bf0d268-7793-4fc9-8965-41a6458b3d12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb4ff40d0>]}
+[0m20:46:12.137126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3bf0d268-7793-4fc9-8965-41a6458b3d12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb50aa620>]}
+[0m20:46:12.138933 [info ] [MainThread]: Found 2 models, 3 tests, 0 snapshots, 0 analyses, 401 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m20:46:12.163156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3bf0d268-7793-4fc9-8965-41a6458b3d12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb78f3340>]}
+[0m20:46:12.166794 [warn ] [MainThread]: The selection criterion './shared_dbt' does not match any nodes
+[0m20:46:12.169909 [info ] [MainThread]: 
+[0m20:46:12.172315 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m20:46:12.211398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb50a8730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb50a8490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb50a9de0>]}
+[0m20:46:12.212910 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-20 20:46:27.570940 | 1d0a3b3b-f884-443d-b570-2a76f10a0245 ==============================
+[0m20:46:27.570950 [info ] [MainThread]: Running with dbt=1.3.1
+[0m20:46:27.572672 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/src/dbt/dbt_project/profiles', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': '/usr/src/dbt/dbt_project/shared_dbt', 'select': ['./shared_dbt'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m20:46:27.574435 [debug] [MainThread]: Tracking: tracking
+[0m20:46:27.581873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa61afbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa61ae9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa61aea10>]}
+[0m20:46:27.736549 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:46:27.741078 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:46:27.746652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1d0a3b3b-f884-443d-b570-2a76f10a0245', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa55100d0>]}
+[0m20:46:27.799310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1d0a3b3b-f884-443d-b570-2a76f10a0245', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa55ca6b0>]}
+[0m20:46:27.805945 [info ] [MainThread]: Found 2 models, 3 tests, 0 snapshots, 0 analyses, 401 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m20:46:27.807824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1d0a3b3b-f884-443d-b570-2a76f10a0245', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa55ca710>]}
+[0m20:46:27.810774 [warn ] [MainThread]: The selection criterion './shared_dbt' does not match any nodes
+[0m20:46:27.812467 [info ] [MainThread]: 
+[0m20:46:27.814565 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m20:46:27.866151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa55c8700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa55c9ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa55c83a0>]}
+[0m20:46:27.868865 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-20 21:08:07.921796 | 595da3ac-8422-433b-bc27-70f83bf01685 ==============================
+[0m21:08:07.921807 [info ] [MainThread]: Running with dbt=1.3.1
+[0m21:08:07.923144 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/src/dbt/dbt_project/profiles', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m21:08:07.924655 [debug] [MainThread]: Tracking: tracking
+[0m21:08:07.927620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffbc8786d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffba546a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffba546a70>]}
+[0m21:08:08.126369 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:08:08.129298 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:08:08.140662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '595da3ac-8422-433b-bc27-70f83bf01685', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb98a80d0>]}
+[0m21:08:08.202989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '595da3ac-8422-433b-bc27-70f83bf01685', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb995e6b0>]}
+[0m21:08:08.204745 [info ] [MainThread]: Found 2 models, 3 tests, 0 snapshots, 0 analyses, 401 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m21:08:08.206424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '595da3ac-8422-433b-bc27-70f83bf01685', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb981bb50>]}
+[0m21:08:08.231185 [info ] [MainThread]: 
+[0m21:08:08.233396 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:08:08.237470 [debug] [ThreadPool]: Acquiring new postgres connection "list_postgres"
+[0m21:08:08.245416 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m21:08:08.247398 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:08:08.249507 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:08:13.319456 [debug] [ThreadPool]: SQL status: SELECT 10 in 5.07 seconds
+[0m21:08:13.323322 [debug] [ThreadPool]: On list_postgres: Close
+[0m21:08:13.328028 [debug] [ThreadPool]: Acquiring new postgres connection "list_postgres_public"
+[0m21:08:13.337711 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m21:08:13.339221 [debug] [ThreadPool]: On list_postgres_public: BEGIN
+[0m21:08:13.340568 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:08:18.379419 [debug] [ThreadPool]: SQL status: BEGIN in 5.04 seconds
+[0m21:08:18.383286 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m21:08:18.387087 [debug] [ThreadPool]: On list_postgres_public: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "connection_name": "list_postgres_public"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+[0m21:08:18.448430 [debug] [ThreadPool]: SQL status: SELECT 34 in 0.06 seconds
+[0m21:08:18.475006 [debug] [ThreadPool]: On list_postgres_public: ROLLBACK
+[0m21:08:18.477948 [debug] [ThreadPool]: On list_postgres_public: Close
+[0m21:08:18.482385 [debug] [MainThread]: Using postgres connection "master"
+[0m21:08:18.484678 [debug] [MainThread]: On master: BEGIN
+[0m21:08:18.486533 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:08:23.537193 [debug] [MainThread]: SQL status: BEGIN in 5.05 seconds
+[0m21:08:23.540597 [debug] [MainThread]: Using postgres connection "master"
+[0m21:08:23.549026 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:08:23.636498 [debug] [MainThread]: SQL status: SELECT 46 in 0.08 seconds
+[0m21:08:23.640186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '595da3ac-8422-433b-bc27-70f83bf01685', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb98e3dc0>]}
+[0m21:08:23.642339 [debug] [MainThread]: On master: ROLLBACK
+[0m21:08:23.645553 [debug] [MainThread]: Using postgres connection "master"
+[0m21:08:23.647657 [debug] [MainThread]: On master: BEGIN
+[0m21:08:23.650275 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m21:08:23.651744 [debug] [MainThread]: On master: COMMIT
+[0m21:08:23.653092 [debug] [MainThread]: Using postgres connection "master"
+[0m21:08:23.654713 [debug] [MainThread]: On master: COMMIT
+[0m21:08:23.656591 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:08:23.658142 [debug] [MainThread]: On master: Close
+[0m21:08:23.661557 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:08:23.663267 [info ] [MainThread]: 
+[0m21:08:23.668834 [debug] [Thread-1 (]: Began running node model.shared_dbt.stg_payment
+[0m21:08:23.670812 [info ] [Thread-1 (]: 1 of 2 START sql view model public.stg_payment ................................. [RUN]
+[0m21:08:23.694138 [debug] [Thread-1 (]: Acquiring new postgres connection "model.shared_dbt.stg_payment"
+[0m21:08:23.695975 [debug] [Thread-1 (]: Began compiling node model.shared_dbt.stg_payment
+[0m21:08:23.698094 [debug] [Thread-1 (]: Compiling model.shared_dbt.stg_payment
+[0m21:08:23.701691 [debug] [Thread-1 (]: Writing injected SQL for node "model.shared_dbt.stg_payment"
+[0m21:08:23.735983 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:08:23.737480 [debug] [Thread-1 (]: Began executing node model.shared_dbt.stg_payment
+[0m21:08:23.760283 [debug] [Thread-1 (]: Writing runtime sql for node "model.shared_dbt.stg_payment"
+[0m21:08:23.782800 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:08:23.784395 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: BEGIN
+[0m21:08:23.785800 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:08:23.832732 [debug] [Thread-1 (]: SQL status: BEGIN in 0.05 seconds
+[0m21:08:23.835168 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:08:23.836644 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.stg_payment"} */
+
+  create view "postgres"."public"."stg_payment__dbt_tmp" as (
+    SELECT
+    *
+FROM
+    "postgres"."public"."payment"
+  );
+[0m21:08:23.863510 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.03 seconds
+[0m21:08:23.868926 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:08:23.870914 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.stg_payment"} */
+alter table "postgres"."public"."stg_payment" rename to "stg_payment__dbt_backup"
+[0m21:08:23.874714 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:08:23.883059 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:08:23.884909 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.stg_payment"} */
+alter table "postgres"."public"."stg_payment__dbt_tmp" rename to "stg_payment"
+[0m21:08:23.889600 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:08:23.899757 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: COMMIT
+[0m21:08:23.901287 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:08:23.907617 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: COMMIT
+[0m21:08:23.912607 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m21:08:23.916386 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:08:23.917754 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.stg_payment"} */
+drop view if exists "postgres"."public"."stg_payment__dbt_backup" cascade
+[0m21:08:23.927029 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.01 seconds
+[0m21:08:23.933670 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:08:23.935394 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: Close
+[0m21:08:23.937165 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '595da3ac-8422-433b-bc27-70f83bf01685', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb974d6f0>]}
+[0m21:08:23.940171 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.stg_payment ............................ [[32mCREATE VIEW[0m in 0.24s]
+[0m21:08:23.942445 [debug] [Thread-1 (]: Finished running node model.shared_dbt.stg_payment
+[0m21:08:23.944628 [debug] [Thread-1 (]: Began running node model.shared_dbt.int_revenue_by_date
+[0m21:08:23.946354 [info ] [Thread-1 (]: 2 of 2 START sql view model public.int_revenue_by_date ......................... [RUN]
+[0m21:08:23.948314 [debug] [Thread-1 (]: Acquiring new postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:08:23.949995 [debug] [Thread-1 (]: Began compiling node model.shared_dbt.int_revenue_by_date
+[0m21:08:23.951626 [debug] [Thread-1 (]: Compiling model.shared_dbt.int_revenue_by_date
+[0m21:08:23.955735 [debug] [Thread-1 (]: Writing injected SQL for node "model.shared_dbt.int_revenue_by_date"
+[0m21:08:23.992671 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:08:23.994920 [debug] [Thread-1 (]: Began executing node model.shared_dbt.int_revenue_by_date
+[0m21:08:23.998952 [debug] [Thread-1 (]: Writing runtime sql for node "model.shared_dbt.int_revenue_by_date"
+[0m21:08:24.012427 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:08:24.014257 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: BEGIN
+[0m21:08:24.015581 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:08:24.041267 [debug] [Thread-1 (]: SQL status: BEGIN in 0.03 seconds
+[0m21:08:24.047443 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:08:24.048971 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.int_revenue_by_date"} */
+
+  create view "postgres"."public"."int_revenue_by_date__dbt_tmp" as (
+    SELECT
+    DATE(payment_date) AS payment_date,
+    SUM(amount) AS amount
+FROM
+    "postgres"."public"."stg_payment"
+GROUP BY
+    1
+  );
+[0m21:08:24.076527 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.03 seconds
+[0m21:08:24.080307 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:08:24.081946 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.int_revenue_by_date"} */
+alter table "postgres"."public"."int_revenue_by_date__dbt_tmp" rename to "int_revenue_by_date"
+[0m21:08:24.092005 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:08:24.094698 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: COMMIT
+[0m21:08:24.096317 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:08:24.097806 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: COMMIT
+[0m21:08:24.102109 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m21:08:24.104995 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:08:24.106534 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.int_revenue_by_date"} */
+drop view if exists "postgres"."public"."int_revenue_by_date__dbt_backup" cascade
+[0m21:08:24.108956 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m21:08:24.111056 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:08:24.112684 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: Close
+[0m21:08:24.116253 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '595da3ac-8422-433b-bc27-70f83bf01685', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb97682b0>]}
+[0m21:08:24.118828 [info ] [Thread-1 (]: 2 of 2 OK created sql view model public.int_revenue_by_date .................... [[32mCREATE VIEW[0m in 0.17s]
+[0m21:08:24.120755 [debug] [Thread-1 (]: Finished running node model.shared_dbt.int_revenue_by_date
+[0m21:08:24.123161 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:08:24.124506 [debug] [MainThread]: Using postgres connection "master"
+[0m21:08:24.147664 [debug] [MainThread]: On master: BEGIN
+[0m21:08:24.150130 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:08:24.175562 [debug] [MainThread]: SQL status: BEGIN in 0.03 seconds
+[0m21:08:24.177711 [debug] [MainThread]: On master: COMMIT
+[0m21:08:24.179351 [debug] [MainThread]: Using postgres connection "master"
+[0m21:08:24.181106 [debug] [MainThread]: On master: COMMIT
+[0m21:08:24.183156 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:08:24.190183 [debug] [MainThread]: On master: Close
+[0m21:08:24.192381 [info ] [MainThread]: 
+[0m21:08:24.194080 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 15.96 seconds (15.96s).
+[0m21:08:24.196087 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:08:24.202455 [debug] [MainThread]: Connection 'model.shared_dbt.int_revenue_by_date' was properly closed.
+[0m21:08:24.257342 [info ] [MainThread]: 
+[0m21:08:24.259345 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:08:24.266462 [info ] [MainThread]: 
+[0m21:08:24.268332 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m21:08:24.270514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb995c790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb985bf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb975b430>]}
+[0m21:08:24.272310 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-20 21:20:30.619254 | c912868f-e705-476d-9d9d-86820d28a94b ==============================
+[0m21:20:30.619266 [info ] [MainThread]: Running with dbt=1.3.1
+[0m21:20:30.621326 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/usr/src/dbt/dbt_project/profiles', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+[0m21:20:30.628068 [debug] [MainThread]: Tracking: tracking
+[0m21:20:30.632494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff91fdba90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f1f6aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f1f7c10>]}
+[0m21:20:30.672014 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m21:20:30.674586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c912868f-e705-476d-9d9d-86820d28a94b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9190d810>]}
+[0m21:20:30.822945 [debug] [MainThread]: Parsing macros/timestamps.sql
+[0m21:20:30.826325 [debug] [MainThread]: Parsing macros/relations.sql
+[0m21:20:30.829197 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m21:20:30.841997 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m21:20:30.844880 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m21:20:30.846658 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m21:20:30.869699 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m21:20:30.875499 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m21:20:30.877706 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m21:20:30.879534 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m21:20:30.881539 [debug] [MainThread]: Parsing macros/materializations/incremental_strategies.sql
+[0m21:20:30.883574 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+[0m21:20:30.885868 [debug] [MainThread]: Parsing macros/python_model/python.sql
+[0m21:20:30.890374 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m21:20:30.897817 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m21:20:30.900383 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m21:20:30.902968 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m21:20:30.905062 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m21:20:30.906771 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m21:20:30.908679 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m21:20:30.915169 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m21:20:30.917316 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m21:20:30.919387 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m21:20:30.921546 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m21:20:30.930563 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m21:20:30.932658 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m21:20:30.934653 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m21:20:30.936347 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m21:20:30.938313 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m21:20:30.940383 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m21:20:30.942313 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m21:20:30.943978 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m21:20:30.946274 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m21:20:30.948761 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m21:20:30.950947 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m21:20:30.954564 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m21:20:30.956670 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m21:20:30.958564 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m21:20:30.964655 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m21:20:30.967094 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m21:20:30.972715 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+[0m21:20:30.976066 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m21:20:30.978870 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m21:20:30.987239 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m21:20:31.010915 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m21:20:31.019880 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m21:20:31.023670 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m21:20:31.026680 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m21:20:31.028519 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m21:20:31.030759 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m21:20:31.034672 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m21:20:31.040274 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m21:20:31.048748 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m21:20:31.052682 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m21:20:31.059890 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m21:20:31.062366 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m21:20:31.071371 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m21:20:31.084694 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m21:20:31.088876 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m21:20:31.091771 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m21:20:31.093900 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m21:20:31.101170 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m21:20:31.114318 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m21:20:31.120125 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m21:20:31.129393 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+[0m21:20:31.134348 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m21:20:31.137866 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m21:20:31.142314 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m21:20:31.144905 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m21:20:31.147408 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m21:20:31.149856 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m21:20:31.153879 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m21:20:31.157825 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m21:20:31.162650 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m21:20:31.172257 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m21:20:31.174769 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m21:20:31.176380 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m21:20:31.179327 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m21:20:31.181499 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m21:20:31.184151 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+[0m21:20:31.186712 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+[0m21:20:31.189300 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+[0m21:20:31.212590 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+[0m21:20:31.216322 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+[0m21:20:31.220188 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+[0m21:20:31.223429 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+[0m21:20:31.227341 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+[0m21:20:31.234750 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+[0m21:20:31.237306 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+[0m21:20:31.239798 [debug] [MainThread]: Parsing macros/generic_tests/not_empty_string.sql
+[0m21:20:31.247431 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+[0m21:20:31.250736 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+[0m21:20:31.253571 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+[0m21:20:31.256078 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+[0m21:20:31.259374 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+[0m21:20:31.267209 [debug] [MainThread]: Parsing macros/jinja_helpers/_is_ephemeral.sql
+[0m21:20:31.270149 [debug] [MainThread]: Parsing macros/jinja_helpers/_is_relation.sql
+[0m21:20:31.272559 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+[0m21:20:31.274820 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+[0m21:20:31.276702 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+[0m21:20:31.283491 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+[0m21:20:31.285805 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+[0m21:20:31.289587 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+[0m21:20:31.293037 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+[0m21:20:31.296416 [debug] [MainThread]: Parsing macros/sql/generate_surrogate_key.sql
+[0m21:20:31.299022 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+[0m21:20:31.303113 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+[0m21:20:31.305930 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+[0m21:20:31.308528 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+[0m21:20:31.311785 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+[0m21:20:31.314694 [debug] [MainThread]: Parsing macros/sql/get_single_value.sql
+[0m21:20:31.318137 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+[0m21:20:31.320160 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+[0m21:20:31.324931 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+[0m21:20:31.327077 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+[0m21:20:31.329141 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+[0m21:20:31.334356 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+[0m21:20:31.337065 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+[0m21:20:31.339409 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+[0m21:20:31.342632 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+[0m21:20:31.345225 [debug] [MainThread]: Parsing macros/sql/safe_divide.sql
+[0m21:20:31.367392 [debug] [MainThread]: Parsing macros/sql/star.sql
+[0m21:20:31.371962 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+[0m21:20:31.374375 [debug] [MainThread]: Parsing macros/sql/union.sql
+[0m21:20:31.381882 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+[0m21:20:31.385873 [debug] [MainThread]: Parsing macros/sql/width_bucket.sql
+[0m21:20:31.389659 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+[0m21:20:31.392433 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+[0m21:20:31.399848 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+[0m21:20:31.543965 [debug] [MainThread]: 1699: static parser successfully parsed intermediate/int_revenue_by_date.sql
+[0m21:20:31.552383 [debug] [MainThread]: 1699: static parser successfully parsed staging/stg_payment.sql
+[0m21:20:31.647484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c912868f-e705-476d-9d9d-86820d28a94b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8efd8820>]}
+[0m21:20:31.695217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c912868f-e705-476d-9d9d-86820d28a94b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff918c0670>]}
+[0m21:20:31.700462 [info ] [MainThread]: Found 2 models, 3 tests, 0 snapshots, 0 analyses, 401 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m21:20:31.702387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c912868f-e705-476d-9d9d-86820d28a94b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8fdaa710>]}
+[0m21:20:31.705950 [info ] [MainThread]: 
+[0m21:20:31.708426 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:20:31.711224 [debug] [ThreadPool]: Acquiring new postgres connection "list_postgres"
+[0m21:20:31.767432 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m21:20:31.769700 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:20:31.771963 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:20:31.821322 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.05 seconds
+[0m21:20:31.824054 [debug] [ThreadPool]: On list_postgres: Close
+[0m21:20:31.826297 [debug] [ThreadPool]: Acquiring new postgres connection "list_postgres_public"
+[0m21:20:31.832158 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m21:20:31.836661 [debug] [ThreadPool]: On list_postgres_public: BEGIN
+[0m21:20:31.838319 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:20:36.914742 [debug] [ThreadPool]: SQL status: BEGIN in 5.08 seconds
+[0m21:20:36.918225 [debug] [ThreadPool]: Using postgres connection "list_postgres_public"
+[0m21:20:36.920986 [debug] [ThreadPool]: On list_postgres_public: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "connection_name": "list_postgres_public"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+[0m21:20:36.970874 [debug] [ThreadPool]: SQL status: SELECT 34 in 0.05 seconds
+[0m21:20:36.973818 [debug] [ThreadPool]: On list_postgres_public: ROLLBACK
+[0m21:20:36.976806 [debug] [ThreadPool]: On list_postgres_public: Close
+[0m21:20:36.981662 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:36.984865 [debug] [MainThread]: On master: BEGIN
+[0m21:20:36.986464 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:20:42.059539 [debug] [MainThread]: SQL status: BEGIN in 5.07 seconds
+[0m21:20:42.063227 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:42.090549 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:20:42.164519 [debug] [MainThread]: SQL status: SELECT 46 in 0.07 seconds
+[0m21:20:42.168410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c912868f-e705-476d-9d9d-86820d28a94b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f0c6e00>]}
+[0m21:20:42.170831 [debug] [MainThread]: On master: ROLLBACK
+[0m21:20:42.174097 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:42.176055 [debug] [MainThread]: On master: BEGIN
+[0m21:20:42.183830 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m21:20:42.186133 [debug] [MainThread]: On master: COMMIT
+[0m21:20:42.187822 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:42.189218 [debug] [MainThread]: On master: COMMIT
+[0m21:20:42.191018 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:20:42.197653 [debug] [MainThread]: On master: Close
+[0m21:20:42.199974 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:20:42.201729 [info ] [MainThread]: 
+[0m21:20:42.207187 [debug] [Thread-1 (]: Began running node model.shared_dbt.stg_payment
+[0m21:20:42.213911 [info ] [Thread-1 (]: 1 of 5 START sql view model public.stg_payment ................................. [RUN]
+[0m21:20:42.216090 [debug] [Thread-1 (]: Acquiring new postgres connection "model.shared_dbt.stg_payment"
+[0m21:20:42.217817 [debug] [Thread-1 (]: Began compiling node model.shared_dbt.stg_payment
+[0m21:20:42.219230 [debug] [Thread-1 (]: Compiling model.shared_dbt.stg_payment
+[0m21:20:42.222421 [debug] [Thread-1 (]: Writing injected SQL for node "model.shared_dbt.stg_payment"
+[0m21:20:42.228774 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:20:42.230594 [debug] [Thread-1 (]: Began executing node model.shared_dbt.stg_payment
+[0m21:20:42.250535 [debug] [Thread-1 (]: Writing runtime sql for node "model.shared_dbt.stg_payment"
+[0m21:20:42.258342 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:20:42.259992 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: BEGIN
+[0m21:20:42.262877 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:20:42.290265 [debug] [Thread-1 (]: SQL status: BEGIN in 0.03 seconds
+[0m21:20:42.292908 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:20:42.294828 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.stg_payment"} */
+
+  create view "postgres"."public"."stg_payment__dbt_tmp" as (
+    SELECT
+    *
+FROM
+    "postgres"."public"."payment"
+  );
+[0m21:20:42.331128 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.03 seconds
+[0m21:20:42.336703 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:20:42.338498 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.stg_payment"} */
+alter table "postgres"."public"."stg_payment" rename to "stg_payment__dbt_backup"
+[0m21:20:42.342396 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:20:42.345912 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:20:42.347427 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.stg_payment"} */
+alter table "postgres"."public"."stg_payment__dbt_tmp" rename to "stg_payment"
+[0m21:20:42.351191 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:20:42.366383 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: COMMIT
+[0m21:20:42.368297 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:20:42.369941 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: COMMIT
+[0m21:20:42.374930 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m21:20:42.379587 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.stg_payment"
+[0m21:20:42.385843 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.stg_payment"} */
+drop view if exists "postgres"."public"."stg_payment__dbt_backup" cascade
+[0m21:20:42.395285 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.01 seconds
+[0m21:20:42.397543 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:20:42.398921 [debug] [Thread-1 (]: On model.shared_dbt.stg_payment: Close
+[0m21:20:42.400820 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c912868f-e705-476d-9d9d-86820d28a94b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f06a530>]}
+[0m21:20:42.407530 [info ] [Thread-1 (]: 1 of 5 OK created sql view model public.stg_payment ............................ [[32mCREATE VIEW[0m in 0.18s]
+[0m21:20:42.409232 [debug] [Thread-1 (]: Finished running node model.shared_dbt.stg_payment
+[0m21:20:42.411185 [debug] [Thread-1 (]: Began running node test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce
+[0m21:20:42.412730 [info ] [Thread-1 (]: 2 of 5 START test not_null_stg_payment_customer_id ............................. [RUN]
+[0m21:20:42.414317 [debug] [Thread-1 (]: Acquiring new postgres connection "test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce"
+[0m21:20:42.415819 [debug] [Thread-1 (]: Began compiling node test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce
+[0m21:20:42.417117 [debug] [Thread-1 (]: Compiling test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce
+[0m21:20:42.425694 [debug] [Thread-1 (]: Writing injected SQL for node "test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce"
+[0m21:20:42.435724 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:20:42.437487 [debug] [Thread-1 (]: Began executing node test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce
+[0m21:20:42.446240 [debug] [Thread-1 (]: Writing runtime sql for node "test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce"
+[0m21:20:42.474984 [debug] [Thread-1 (]: Using postgres connection "test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce"
+[0m21:20:42.476853 [debug] [Thread-1 (]: On test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce: BEGIN
+[0m21:20:42.478802 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:20:47.553069 [debug] [Thread-1 (]: SQL status: BEGIN in 5.07 seconds
+[0m21:20:47.562829 [debug] [Thread-1 (]: Using postgres connection "test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce"
+[0m21:20:47.566582 [debug] [Thread-1 (]: On test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from "postgres"."public"."stg_payment"
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:20:47.596060 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.03 seconds
+[0m21:20:47.599841 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:20:47.606372 [debug] [Thread-1 (]: On test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce: ROLLBACK
+[0m21:20:47.609231 [debug] [Thread-1 (]: On test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce: Close
+[0m21:20:47.611715 [info ] [Thread-1 (]: 2 of 5 PASS not_null_stg_payment_customer_id ................................... [[32mPASS[0m in 5.20s]
+[0m21:20:47.614623 [debug] [Thread-1 (]: Finished running node test.shared_dbt.not_null_stg_payment_customer_id.baf680fcce
+[0m21:20:47.617061 [debug] [Thread-1 (]: Began running node test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72
+[0m21:20:47.618641 [info ] [Thread-1 (]: 3 of 5 START test not_null_stg_payment_payment_id .............................. [RUN]
+[0m21:20:47.620789 [debug] [Thread-1 (]: Acquiring new postgres connection "test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72"
+[0m21:20:47.622462 [debug] [Thread-1 (]: Began compiling node test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72
+[0m21:20:47.624110 [debug] [Thread-1 (]: Compiling test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72
+[0m21:20:47.628980 [debug] [Thread-1 (]: Writing injected SQL for node "test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72"
+[0m21:20:47.636795 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:20:47.638488 [debug] [Thread-1 (]: Began executing node test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72
+[0m21:20:47.642335 [debug] [Thread-1 (]: Writing runtime sql for node "test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72"
+[0m21:20:47.648102 [debug] [Thread-1 (]: Using postgres connection "test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72"
+[0m21:20:47.670356 [debug] [Thread-1 (]: On test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72: BEGIN
+[0m21:20:47.672299 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:20:47.698810 [debug] [Thread-1 (]: SQL status: BEGIN in 0.03 seconds
+[0m21:20:47.700931 [debug] [Thread-1 (]: Using postgres connection "test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72"
+[0m21:20:47.702660 [debug] [Thread-1 (]: On test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select payment_id
+from "postgres"."public"."stg_payment"
+where payment_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m21:20:47.729092 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.02 seconds
+[0m21:20:47.741797 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:20:47.748847 [debug] [Thread-1 (]: On test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72: ROLLBACK
+[0m21:20:47.751771 [debug] [Thread-1 (]: On test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72: Close
+[0m21:20:47.753584 [info ] [Thread-1 (]: 3 of 5 PASS not_null_stg_payment_payment_id .................................... [[32mPASS[0m in 0.13s]
+[0m21:20:47.755221 [debug] [Thread-1 (]: Finished running node test.shared_dbt.not_null_stg_payment_payment_id.a464b8cd72
+[0m21:20:47.756501 [debug] [Thread-1 (]: Began running node test.shared_dbt.unique_stg_payment_payment_id.7398e70184
+[0m21:20:47.763711 [info ] [Thread-1 (]: 4 of 5 START test unique_stg_payment_payment_id ................................ [RUN]
+[0m21:20:47.765460 [debug] [Thread-1 (]: Acquiring new postgres connection "test.shared_dbt.unique_stg_payment_payment_id.7398e70184"
+[0m21:20:47.766995 [debug] [Thread-1 (]: Began compiling node test.shared_dbt.unique_stg_payment_payment_id.7398e70184
+[0m21:20:47.768655 [debug] [Thread-1 (]: Compiling test.shared_dbt.unique_stg_payment_payment_id.7398e70184
+[0m21:20:47.778888 [debug] [Thread-1 (]: Writing injected SQL for node "test.shared_dbt.unique_stg_payment_payment_id.7398e70184"
+[0m21:20:47.784101 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:20:47.785713 [debug] [Thread-1 (]: Began executing node test.shared_dbt.unique_stg_payment_payment_id.7398e70184
+[0m21:20:47.788164 [debug] [Thread-1 (]: Writing runtime sql for node "test.shared_dbt.unique_stg_payment_payment_id.7398e70184"
+[0m21:20:47.793030 [debug] [Thread-1 (]: Using postgres connection "test.shared_dbt.unique_stg_payment_payment_id.7398e70184"
+[0m21:20:47.795555 [debug] [Thread-1 (]: On test.shared_dbt.unique_stg_payment_payment_id.7398e70184: BEGIN
+[0m21:20:47.796958 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:20:47.822520 [debug] [Thread-1 (]: SQL status: BEGIN in 0.03 seconds
+[0m21:20:47.825170 [debug] [Thread-1 (]: Using postgres connection "test.shared_dbt.unique_stg_payment_payment_id.7398e70184"
+[0m21:20:47.828369 [debug] [Thread-1 (]: On test.shared_dbt.unique_stg_payment_payment_id.7398e70184: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "test.shared_dbt.unique_stg_payment_payment_id.7398e70184"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    payment_id as unique_field,
+    count(*) as n_records
+
+from "postgres"."public"."stg_payment"
+where payment_id is not null
+group by payment_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m21:20:47.905772 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.08 seconds
+[0m21:20:47.908803 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:20:47.910593 [debug] [Thread-1 (]: On test.shared_dbt.unique_stg_payment_payment_id.7398e70184: ROLLBACK
+[0m21:20:47.913200 [debug] [Thread-1 (]: On test.shared_dbt.unique_stg_payment_payment_id.7398e70184: Close
+[0m21:20:47.936172 [info ] [Thread-1 (]: 4 of 5 PASS unique_stg_payment_payment_id ...................................... [[32mPASS[0m in 0.17s]
+[0m21:20:47.938288 [debug] [Thread-1 (]: Finished running node test.shared_dbt.unique_stg_payment_payment_id.7398e70184
+[0m21:20:47.941381 [debug] [Thread-1 (]: Began running node model.shared_dbt.int_revenue_by_date
+[0m21:20:47.943577 [info ] [Thread-1 (]: 5 of 5 START sql view model public.int_revenue_by_date ......................... [RUN]
+[0m21:20:47.945520 [debug] [Thread-1 (]: Acquiring new postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:20:47.947980 [debug] [Thread-1 (]: Began compiling node model.shared_dbt.int_revenue_by_date
+[0m21:20:47.949728 [debug] [Thread-1 (]: Compiling model.shared_dbt.int_revenue_by_date
+[0m21:20:47.958559 [debug] [Thread-1 (]: Writing injected SQL for node "model.shared_dbt.int_revenue_by_date"
+[0m21:20:47.964223 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:20:47.965572 [debug] [Thread-1 (]: Began executing node model.shared_dbt.int_revenue_by_date
+[0m21:20:47.974374 [debug] [Thread-1 (]: Writing runtime sql for node "model.shared_dbt.int_revenue_by_date"
+[0m21:20:47.980794 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:20:47.986753 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: BEGIN
+[0m21:20:47.988273 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:20:48.013005 [debug] [Thread-1 (]: SQL status: BEGIN in 0.02 seconds
+[0m21:20:48.015003 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:20:48.017815 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.int_revenue_by_date"} */
+
+  create view "postgres"."public"."int_revenue_by_date__dbt_tmp" as (
+    SELECT
+    DATE(payment_date) AS payment_date,
+    SUM(amount) AS amount
+FROM
+    "postgres"."public"."stg_payment"
+GROUP BY
+    1
+  );
+[0m21:20:48.045030 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.03 seconds
+[0m21:20:48.050292 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:20:48.052003 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.int_revenue_by_date"} */
+alter table "postgres"."public"."int_revenue_by_date__dbt_tmp" rename to "int_revenue_by_date"
+[0m21:20:48.056237 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m21:20:48.058693 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: COMMIT
+[0m21:20:48.060791 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:20:48.062096 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: COMMIT
+[0m21:20:48.065766 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m21:20:48.068239 [debug] [Thread-1 (]: Using postgres connection "model.shared_dbt.int_revenue_by_date"
+[0m21:20:48.071070 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "shared_dbt", "target_name": "dev", "node_id": "model.shared_dbt.int_revenue_by_date"} */
+drop view if exists "postgres"."public"."int_revenue_by_date__dbt_backup" cascade
+[0m21:20:48.073973 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m21:20:48.075999 [debug] [Thread-1 (]: finished collecting timing info
+[0m21:20:48.077513 [debug] [Thread-1 (]: On model.shared_dbt.int_revenue_by_date: Close
+[0m21:20:48.078920 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c912868f-e705-476d-9d9d-86820d28a94b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8f0af730>]}
+[0m21:20:48.080396 [info ] [Thread-1 (]: 5 of 5 OK created sql view model public.int_revenue_by_date .................... [[32mCREATE VIEW[0m in 0.13s]
+[0m21:20:48.103765 [debug] [Thread-1 (]: Finished running node model.shared_dbt.int_revenue_by_date
+[0m21:20:48.106943 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m21:20:48.108543 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:48.109872 [debug] [MainThread]: On master: BEGIN
+[0m21:20:48.111255 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:20:48.136215 [debug] [MainThread]: SQL status: BEGIN in 0.02 seconds
+[0m21:20:48.138719 [debug] [MainThread]: On master: COMMIT
+[0m21:20:48.145562 [debug] [MainThread]: Using postgres connection "master"
+[0m21:20:48.147537 [debug] [MainThread]: On master: COMMIT
+[0m21:20:48.149773 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m21:20:48.150868 [debug] [MainThread]: On master: Close
+[0m21:20:48.152786 [info ] [MainThread]: 
+[0m21:20:48.159487 [info ] [MainThread]: Finished running 2 view models, 3 tests in 0 hours 0 minutes and 16.44 seconds (16.44s).
+[0m21:20:48.161910 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:20:48.163767 [debug] [MainThread]: Connection 'model.shared_dbt.int_revenue_by_date' was properly closed.
+[0m21:20:48.218956 [info ] [MainThread]: 
+[0m21:20:48.226117 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:20:48.227291 [info ] [MainThread]: 
+[0m21:20:48.228724 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m21:20:48.230378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e92e260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e92e7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8e92ffa0>]}
+[0m21:20:48.237845 [debug] [MainThread]: Flushing usage events
