@@ -1,4 +1,17 @@
-test_profile:
+original_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgres
+      user: postgres
+      password: postgres
+      port: 5432
+      dbname: postgres
+      schema: public
+      threads: 1
+
+dependent_dbt:
   target: dev
   outputs:
     dev:
