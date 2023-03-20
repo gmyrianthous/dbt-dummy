@@ -6,6 +6,9 @@ services:
     image: frantiseks/postgres-sakila
     ports:
       - '5432:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
@@ -23,9 +26,17 @@ services:
   pgadmin:
     container_name: pgadmin4
     image: dpage/pgadmin4
+    depends_on:
+      - postgres
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_SRV_GROUP: "postgres"
+      PGADMIN_SRV_NAME: "postgres"
+      PGADMIN_SRV_HOST: "postgres"
+      PGADMIN_SRV_PORT: 5432
+      PGADMIN_SRV_USER: postgres
+      PGADMIN_SRV_PASSWORD: postgres
     ports:
       - "5050:80"

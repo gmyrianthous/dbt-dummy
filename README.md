@@ -105,22 +105,17 @@ dbt build --profiles-dir profiles
 In order to query and verify the seeds, models and snapshots created in the dummy dbt project, simply follow the 
 steps below. 
 
-Find the container id of the postgres service (`postgres`):
+Open the pgAdmin 4 web interface from the local host:
 ```commandline
-docker ps 
+http://localhost:5050/
 ```
 
-Then run 
-```commandline
-docker exec -t <container-id> /bin/bash
-```
+Login in with the following credentials
 
-We will then use `psql`, a terminal-based interface for PostgreSQL that allows us to query the database:
-```commandline
-psql -U postgres
-```
+      email: admin@admin.com 
+      password: root
 
-Now you can query the tables constructed form the seeds, models and snapshots defined in the dbt project:
+Now you can execute SQL queries through Query Tool and navigate to the tables constructed form the seeds, models and snapshots defined in the dbt project:
 ```sql
 -- Query seed tables
 SELECT * FROM customer_base;
