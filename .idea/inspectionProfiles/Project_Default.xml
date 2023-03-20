@@ -1,0 +1,51 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="38">
+            <item index="0" class="java.lang.String" itemvalue="google-cloud-bigquery" />
+            <item index="1" class="java.lang.String" itemvalue="protobuf" />
+            <item index="2" class="java.lang.String" itemvalue="firebase-admin" />
+            <item index="3" class="java.lang.String" itemvalue="joblib" />
+            <item index="4" class="java.lang.String" itemvalue="scikit-learn" />
+            <item index="5" class="java.lang.String" itemvalue="nltk" />
+            <item index="6" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="7" class="java.lang.String" itemvalue="google-cloud-storage" />
+            <item index="8" class="java.lang.String" itemvalue="numpy" />
+            <item index="9" class="java.lang.String" itemvalue="flake8" />
+            <item index="10" class="java.lang.String" itemvalue="python-incidentio-client" />
+            <item index="11" class="java.lang.String" itemvalue="seaborn" />
+            <item index="12" class="java.lang.String" itemvalue="holidays" />
+            <item index="13" class="java.lang.String" itemvalue="phrase-api" />
+            <item index="14" class="java.lang.String" itemvalue="pycircleci" />
+            <item index="15" class="java.lang.String" itemvalue="pytest-cov" />
+            <item index="16" class="java.lang.String" itemvalue="gender-guesser" />
+            <item index="17" class="java.lang.String" itemvalue="workalendar" />
+            <item index="18" class="java.lang.String" itemvalue="xgboost" />
+            <item index="19" class="java.lang.String" itemvalue="google-auth-oauthlib" />
+            <item index="20" class="java.lang.String" itemvalue="pytest" />
+            <item index="21" class="java.lang.String" itemvalue="lime" />
+            <item index="22" class="java.lang.String" itemvalue="google-cloud-aiplatform" />
+            <item index="23" class="java.lang.String" itemvalue="toml" />
+            <item index="24" class="java.lang.String" itemvalue="simplejson" />
+            <item index="25" class="java.lang.String" itemvalue="pandas" />
+            <item index="26" class="java.lang.String" itemvalue="shap" />
+            <item index="27" class="java.lang.String" itemvalue="pandas-gbq" />
+            <item index="28" class="java.lang.String" itemvalue="google-cloud-pubsub" />
+            <item index="29" class="java.lang.String" itemvalue="babel" />
+            <item index="30" class="java.lang.String" itemvalue="bokeh" />
+            <item index="31" class="java.lang.String" itemvalue="statsmodels" />
+            <item index="32" class="java.lang.String" itemvalue="google-api-python-client" />
+            <item index="33" class="java.lang.String" itemvalue="grpcio" />
+            <item index="34" class="java.lang.String" itemvalue="pytz" />
+            <item index="35" class="java.lang.String" itemvalue="imbalanced-learn" />
+            <item index="36" class="java.lang.String" itemvalue="jsonlines" />
+            <item index="37" class="java.lang.String" itemvalue="google-auth" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
