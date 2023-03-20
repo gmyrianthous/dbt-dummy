@@ -1,4 +1,4 @@
-shared_dbt:
+shared_models:
   target: dev
   outputs:
     dev:

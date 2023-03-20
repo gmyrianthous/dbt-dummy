@@ -1,7 +1,6 @@
 version: 2
 
 models:
-  - name: int_revenue_by_date
   - name: int_customers_per_store
     columns:
       - name: store_id
