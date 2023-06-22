@@ -8,15 +8,17 @@ The `docker-compose.yml` file consists of two services:
 that are used to build the data models defined in the example project into a target Postgres database.
 
 ## `postgres` service and the Sakila Database
-This is an instance of a Postgres database initialised with Sakila database (and thus we are using the 
-`frantiseks/postgres-sakila` image which is available on Docker Hub). 
+This is an instance of a Postgres database initialised with Sakila database (and thus we are using the
+`frantiseks/postgres-sakila` image which is available on Docker Hub).
 
-The database models a DVD rental store and contains several normalised tables that correspond to films, payments, 
+The database models a DVD rental store and contains several normalised tables that correspond to films, payments,
 customers and other entities.
 
-Sakila Database was developed by Mike Hillyer, who used to be a member of the AB documentation team at MySQL. For more 
-information regarding Sakila Database you can refer to the 
-[official MySQL documentation](https://dev.mysql.com/doc/sakila/en/sakila-introduction.html). 
+Sakila Database was developed by Mike Hillyer, who used to be a member of the AB documentation team at MySQL. For more
+information regarding Sakila Database you can refer to the
+[official MySQL documentation](https://dev.mysql.com/doc/sakila/en/sakila-introduction.html).
+![Sakila DB](https://www.jooq.org/img/sakila.png)
+
 
 ## `dbt` service
 This service is built out of the `Dockerfile` and is responsible for creating dbt seeds, models and snapshots
@@ -30,7 +32,7 @@ First, let's build the services defined in our `docker-compose.yml` file:
 docker-compose build
 ```
 
-and now let's run the services so that the dbt models are created in our target Postgres database: 
+and now let's run the services so that the dbt models are created in our target Postgres database:
 
 ```commandline
 docker-compose up
@@ -41,13 +43,13 @@ This will spin up two containers namely `dbt` (out of the `dbt-dummy` image) and
 
 Notes:
 - For development purposes, both containers will remain up and running
-- If you would like to end the `dbt` container, feel free to remove the `&& sleep infinity` in `CMD` command of the 
+- If you would like to end the `dbt` container, feel free to remove the `&& sleep infinity` in `CMD` command of the
 `Dockerfile`
 
 
 ### Building additional or modified data models
-Once the containers are up and running, you can still make any modifications in the existing dbt project 
-and re-run any command to serve the purpose of the modifications. 
+Once the containers are up and running, you can still make any modifications in the existing dbt project
+and re-run any command to serve the purpose of the modifications.
 
 In order to build your data models, you first need to access the container.
 
@@ -62,15 +64,15 @@ docker exec -it <container-id> /bin/bash
 ```
 
 ### Querying seeds, models and snapshots on Postgres
-In order to query and verify the seeds, models and snapshots created in the dummy dbt project, simply follow the 
-steps below. 
+In order to query and verify the seeds, models and snapshots created in the dummy dbt project, simply follow the
+steps below.
 
 Find the container id of the postgres service (`postgres`):
 ```commandline
-docker ps 
+docker ps
 ```
 
-Then run 
+Then run
 ```commandline
 docker exec -t <container-id> /bin/bash
 ```
