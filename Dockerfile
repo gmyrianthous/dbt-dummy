@@ -8,6 +8,7 @@ WORKDIR /usr/src/dbt/dbt_project
 # Install the dbt Postgres adapter. This step will also install dbt-core
 RUN pip install --upgrade pip
 RUN pip install dbt-postgres==1.3.1
+RUN pip install pytz
 
 # Install dbt dependencies (as specified in packages.yml file)
 # Build seeds, models and snapshots (and run tests wherever applicable)
