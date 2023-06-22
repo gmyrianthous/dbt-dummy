@@ -83,7 +83,7 @@ And finally:
 dbt deps
 
 # Build seeds
-dbt seeds --profiles-dir profiles
+dbt seed --profiles-dir profiles
 
 # Build data models
 dbt run --profiles-dir profiles
