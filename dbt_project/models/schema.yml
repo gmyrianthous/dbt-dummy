@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: my_model_name
+    description: >-
+      Description of the model.
+
+    columns:
+      - name: column_name
+        description: >-
+          Description of the column.
