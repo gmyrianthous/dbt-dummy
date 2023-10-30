@@ -13,6 +13,8 @@ services:
       retries: 5
   dbt:
     container_name: dbt
+    ports:
+      - '8080:8080'
     build: .
     image: dbt-dummy
     volumes:
