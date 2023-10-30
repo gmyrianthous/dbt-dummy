@@ -13,6 +13,11 @@ services:
       retries: 5
   dbt:
     container_name: dbt
+    ports:
+      - '8080:8080'
+    network_mode: bridge
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     build: .
     image: dbt-dummy
     volumes:
