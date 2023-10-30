@@ -14,4 +14,4 @@ RUN pip install dbt-postgres==1.3.1 pytz
 CMD dbt deps && dbt build --profiles-dir profiles
 
 # Build and serve docs
-CMD dbt docs serve --profiles-dir profiles
+CMD dbt docs generate --profiles-dir profiles && dbt docs serve --profiles-dir profiles
