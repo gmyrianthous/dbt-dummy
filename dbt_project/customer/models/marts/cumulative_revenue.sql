@@ -4,6 +4,8 @@
     )
 }}
 
+--test comment
+
 SELECT
     payment_date,
     amount,
