@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [ 'opened', 'edited', 'reopened', 'synchronize' ]
     paths:
-    - "dbt_project/models/**"
+    - "dbt_project/customer/**"
     - ".github/workflows/plum_dbt_coverage.yml"
 env:
   PYTHON_VERSION: '3.8.12'
