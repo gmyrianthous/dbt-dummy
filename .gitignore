@@ -1,0 +1,12 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+.idea/
+
+dbt_project/dbt_packages/
+dbt_project/target/
+postgres_config.json
