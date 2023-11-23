@@ -3,7 +3,7 @@
         materialized='table',
     )
 }}
---test comment _2
+--test comment
 SELECT
     payment_date,
     amount,
