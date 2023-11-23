@@ -1,0 +1,102 @@
+name: dbt Coverage
+
+on:
+  pull_request:
+    types: [ 'opened', 'edited', 'reopened', 'synchronize' ]
+    paths:
+    - "dbt_project/customer/**"
+    - ".github/workflows/dbt_coverage.yml"
+env:
+  PYTHON_VERSION: '3.8.12'
+  GCP_WORKLOAD_IDENTITY_PROVIDER: projects/237249625410/locations/global/workloadIdentityPools/github-actions/providers/github-actions-provider
+
+jobs:
+  dbt-coverage:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: "read"
+      pull-requests: "write"
+      id-token: "write"
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4.1.1
+
+      - name: Install poetry
+        uses: snok/install-poetry@v1.3.4
+        with:
+          version: 1.4.1
+          virtualenvs-in-project: true
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v4.5.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'poetry'
+
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3.3.1
+        with:
+          path: dbt_project/.venv
+          key: venv-${{ runner.os }}-${{ env.PYTHON_VERSION }}-${{ hashFiles('projects/plum/poetry.lock') }}
+
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        working-directory: './dbt_project/'
+        run: poetry install --no-ansi --no-interaction --sync
+
+      - name: Clean dbt, install deps and compile
+        working-directory: ./dbt_project/
+        run: |
+          echo "Cleaning dbt"
+          poetry run dbt clean --profiles-dir profiles
+          echo "Debugging dbt deps"
+          poetry run dbt debug --profiles-dir profiles
+          echo "Compiling dbt"
+          poetry run dbt deps --profiles-dir profiles
+          echo "Generating dbt docs"
+          poetry run dbt docs generate --profiles-dir profiles
+
+      - name: Get changed files by PR
+        id: changed-files
+        uses: tj-actions/changed-files@v40.1.1
+        with:
+          files: dbt_project/models/**/*.sql
+
+      - name: Check Test and Documentation Coverage
+        id: coverage
+        working-directory: ./dbt_project/
+        run: |
+          prefix="dbt_project/"
+          model_path_filters=()
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            trimmed_directory="${file#$prefix}"
+            model_path_filters+=("--model-path-filter $trimmed_directory")
+          done;
+
+          if [[ ${#model_path_filters[@]} -gt 0 ]]; then
+            coverage_command="poetry run dbt-coverage compute doc --cov-format markdown ${model_path_filters[*]}"
+            test_command="poetry run dbt-coverage compute test --cov-format markdown ${model_path_filters[*]}"
+            eval $coverage_command > coverage_output.md
+            eval $test_command > test_output.md
+          else
+            echo "No files found to check coverage." > coverage_output.md
+            echo "No files found to check coverage." > test_output.md
+          fi
+          echo "Documentation Coverage Output:"
+          cat coverage_output.md
+          echo "Test Coverage Output:"
+          cat test_output.md
+
+      - name: Comment PR with Coverage Result
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            **Documentation coverage output:**
+            ```
+            $(cat coverage_output.md)
+            ```
+            **Test coverage output:**
+            ```
+            $(cat test_output.md)
+            ```
