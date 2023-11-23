@@ -1,4 +1,4 @@
-name: plum dbt Coverage
+name: dbt Coverage
 
 on:
   pull_request:
