@@ -46,7 +46,7 @@ jobs:
         run: poetry install --no-ansi --no-interaction --sync
 
       - name: Clean dbt, install deps and compile
-        working-directory: ./dbt_project/
+        working-directory: ./dbt_project/customer/
         run: |
           echo "Cleaning dbt"
           poetry run dbt clean --profiles-dir profiles
