@@ -4,7 +4,7 @@
     )
 }}
 
---test comment
+--test comment 2
 
 SELECT
     payment_date,

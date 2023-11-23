@@ -5,7 +5,7 @@ on:
     types: [ 'opened', 'edited', 'reopened', 'synchronize' ]
     paths:
     - "dbt_project/customer/**"
-    - ".github/workflows/plum_dbt_coverage.yml"
+    - ".github/workflows/dbt_coverage.yml"
 env:
   PYTHON_VERSION: '3.8.12'
   GCP_WORKLOAD_IDENTITY_PROVIDER: projects/237249625410/locations/global/workloadIdentityPools/github-actions/providers/github-actions-provider
