@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dbt"
+version = "0.1.0"
+description = "Poetry configuration for running dbt"
+authors = ["Data Engineering : <data-engineering@withplum.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.8.12"
+dbt-bigquery = "1.6.6"
+dbt-core = "1.6.6"
+elementary-data = "0.12.0"
+sqlfluff-templater-dbt = "2.3.5"
+google-api-core = ">=2.11.0"  # See https://github.com/dbt-labs/dbt-bigquery/issues/979
+typing-extensions = ">=4.8.0"
+dbt-coverage = "0.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
